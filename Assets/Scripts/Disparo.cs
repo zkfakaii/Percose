@@ -57,6 +57,6 @@ public class Disparo : MonoBehaviour
         projectileRb.velocity = shootDirection * projectileSpeed;
 
         // Apply damage to the player when the projectile hits
-        projectile.GetComponent<Projectile>().SetDamage(damageAmount);
+        //projectile.GetComponent<Projectile>().SetDamage(damageAmount);
     }
 }
