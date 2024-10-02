@@ -9,9 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5710092221255845540}
-  - component: {fileID: -8432681949559348755}
   - component: {fileID: 107580677173146945}
-  - component: {fileID: -9091190817138989143}
   m_Layer: 0
   m_Name: spear
   m_TagString: Untagged
@@ -35,33 +33,6 @@ Transform:
   - {fileID: 8800172131770809486}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &-8432681949559348755
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2602345088991790754}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 10
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &107580677173146945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,18 +51,6 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-9091190817138989143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2602345088991790754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b39468acd6430214783763fed1e92d92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &9055266126937774949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -178,6 +137,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1163899843653724868}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ca3901f13cb6b074dadd4ee50c944e89,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2067899377108283682}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ca3901f13cb6b074dadd4ee50c944e89,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6464053128596775970}
   m_SourcePrefab: {fileID: 100100000, guid: ca3901f13cb6b074dadd4ee50c944e89, type: 3}
 --- !u!1 &8172816444263622196 stripped
 GameObject:
@@ -208,6 +175,51 @@ CapsuleCollider:
   m_Height: 22.44
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2067899377108283682
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8172816444263622196}
+  serializedVersion: 4
+  m_Mass: 0.1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6464053128596775970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8172816444263622196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25140dce9ff0a39438200025d56f36cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  searchedTag: Enemy
+  dealDmg: 10
+  destroyOnHit: 1
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &8800172131770809486 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca3901f13cb6b074dadd4ee50c944e89,
