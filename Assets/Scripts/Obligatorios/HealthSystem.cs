@@ -7,7 +7,7 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] private float timeToSelfDestructOnDeath = 1;
     [SerializeField] private UnityEvent onBeenHit;
     [SerializeField] private UnityEvent onDeath;
-    private float currentHealth;
+    [SerializeField] private float currentHealth; // Show current health in Inspector
 
     void Start()
     {
