@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         isSwimming = swimCheck;
-        Debug.Log(isSwimming);
+        //Debug.Log(isSwimming);
     }
 
     void LookAround()
