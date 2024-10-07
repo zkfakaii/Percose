@@ -12,7 +12,19 @@ public class DealDamage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(searchedTag))
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<HealthSystem>().TakeDamage(dealDmg);
+
+            if (destroyOnHit)
+            {
+                onHit?.Invoke();
+                Destroy(this.gameObject);
+            }
+        }
+
+   
+        if (other.CompareTag("Enemy"))
         {
             other.GetComponent<HealthSystem>().TakeDamage(dealDmg);
 

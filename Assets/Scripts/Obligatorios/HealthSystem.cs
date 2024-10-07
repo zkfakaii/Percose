@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class HealthSystem : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 100f; // Max health for both player and enemies
-    [SerializeField] private float timeToSelfDestructOnDeath = 1;
+    [SerializeField] private float timeToSelfDestructOnDeath = 1f; // Time before destruction
     [SerializeField] private UnityEvent onBeenHit;
     [SerializeField] private UnityEvent onDeath;
     [SerializeField] private float currentHealth; // Show current health in Inspector
@@ -20,11 +20,17 @@ public class HealthSystem : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0f)
         {
-            onDeath?.Invoke();
+            onDeath?.Invoke(); // Trigger onDeath event
+
+            // Check if the object has the "Enemy" tag, and destroy it after the set delay
+            if (CompareTag("Enemy"))
+            {
+                Destroy(gameObject, timeToSelfDestructOnDeath); // Destroy after delay
+            }
         }
         else
         {
-            onBeenHit?.Invoke();
+            onBeenHit?.Invoke(); // Trigger onBeenHit event if not dead
         }
     }
 
