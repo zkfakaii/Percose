@@ -26,6 +26,14 @@ public class EnemyRandomMovement : MonoBehaviour
         timeOffset = Random.Range(0f, Mathf.PI * 2f); // Add randomness to each enemy's wave pattern
     }
 
+    public void InterruptMovement()
+    {
+        // Detener el NavMeshAgent
+        navMeshAgent.isStopped = true; // Detener el movimiento
+                                       // Puedes agregar más lógica si es necesario, como desactivar temporariamente el enemigo
+    }
+
+
     void MoveToRandomPosition()
     {
         // Only move if the agent is not on an OffMeshLink

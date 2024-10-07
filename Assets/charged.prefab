@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5710092221255845540}
   - component: {fileID: 107580677173146945}
-  - component: {fileID: 8203014767823774550}
+  - component: {fileID: 4481728751660078208}
   m_Layer: 0
-  m_Name: spear
+  m_Name: charged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   onHit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8203014767823774550
+--- !u!114 &4481728751660078208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,6 +64,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ed2714b50052d418cd2ac4275c0e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chargedProjectilePrefab: {fileID: 2602345088991790754}
+  firePoint: {fileID: 8800172131770809486}
+  chargedProjectileSpeed: 40
+  chargeTimeThreshold: 1
+  bulletLife: 2
 --- !u!1001 &9055266126937774949
 PrefabInstance:
   m_ObjectHideFlags: 0
