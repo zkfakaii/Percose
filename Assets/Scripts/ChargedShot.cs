@@ -1,26 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChargedShot : MonoBehaviour
 {
-    private float speed;
+    public float damage = 50f; // Daño del disparo
+    public float duration = 2f; // Duración de la carga
+    private float speed; // Velocidad del proyectil
 
-    public void SetSpeed(float newSpeed)
+    // Método para configurar la velocidad
+    public void SetSpeed(float projectileSpeed)
     {
-        speed = newSpeed;
+        speed = projectileSpeed;
+        // Si tienes un Rigidbody, puedes configurar la velocidad aquí si lo deseas
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = transform.forward * speed; // Configura la velocidad inicial del proyectil
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        // Verifica si el objeto con el que colisiona es un Boid
+        if (other.CompareTag("Boid"))
         {
-            // Interrumpe el movimiento del enemigo
-            EnemyRandomMovement enemyMovement = other.GetComponent<EnemyRandomMovement>();
-            if (enemyMovement != null)
+            // Obtén la referencia al script Boid
+            Boid boid = other.GetComponent<Boid>();
+            if (boid != null)
             {
-                enemyMovement.InterruptMovement(); // Implementa esta función en tu script EnemyRandomMovement
+                // Llama al método que reduce la velocidad del boid
+                
+                boid.ReduceSpeed();
+                // Aquí puedes agregar cualquier otra lógica, como aplicar daño
+                // boid.ApplyDamage(damage); // Si implementas un método de daño en Boid
             }
+
+            // Destruir el disparo después de la colisión (opcional)
+           
         }
     }
 }

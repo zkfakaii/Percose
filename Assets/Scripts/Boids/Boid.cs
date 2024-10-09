@@ -12,7 +12,8 @@ public class Boid : MonoBehaviour {
     [HideInInspector]
     public Vector3 forward;
     Vector3 velocity;
-
+    Vector3 velocityLast;
+    bool stopped = false;
     // To update:
     Vector3 acceleration;
     [HideInInspector]
@@ -79,16 +80,19 @@ public class Boid : MonoBehaviour {
             acceleration += collisionAvoidForce;
         }
 
-        velocity += acceleration * Time.deltaTime;
-        float speed = velocity.magnitude;
-        Vector3 dir = velocity / speed;
-        speed = Mathf.Clamp (speed, settings.minSpeed, settings.maxSpeed);
-        velocity = dir * speed;
+        if(!stopped) { 
+            velocity += acceleration * Time.deltaTime;
+            float speed = velocity.magnitude;
+            Vector3 dir = velocity / speed;
+            speed = Mathf.Clamp (speed, settings.minSpeed, settings.maxSpeed);
+            velocity = dir * speed;
 
-        cachedTransform.position += velocity * Time.deltaTime;
-        cachedTransform.forward = dir;
-        position = cachedTransform.position;
-        forward = dir;
+            cachedTransform.position += velocity * Time.deltaTime;
+        
+            cachedTransform.forward = dir;
+            position = cachedTransform.position;
+            forward = dir;
+        }
     }
 
     bool IsHeadingForCollision () {
@@ -116,6 +120,28 @@ public class Boid : MonoBehaviour {
     Vector3 SteerTowards (Vector3 vector) {
         Vector3 v = vector.normalized * settings.maxSpeed - velocity;
         return Vector3.ClampMagnitude (v, settings.maxSteerForce);
+    }
+
+    public void ReduceSpeed()
+    {
+        stopped = true;
+        velocityLast = velocity;
+        velocity = Vector3.zero; // Establece la velocidad a cero
+        StartCoroutine(RestoreSpeedAfterDelay(3f)); // Restaura la velocidad después de 3 segundos (por ejemplo)
+    }
+
+    IEnumerator RestoreSpeedAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(10);
+        
+
+        RestoreSpeed(); // Restaura la velocidad
+    }
+
+    public void RestoreSpeed()
+    {
+        stopped = false;
+        velocity = velocityLast;
     }
 
 }
