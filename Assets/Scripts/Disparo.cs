@@ -13,6 +13,8 @@ public class Disparo : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private float timeSinceLastShot;
 
+    [SerializeField] Transform shootPoint;
+
     void Start()
     {
         // Get the NavMeshAgent component
@@ -34,7 +36,7 @@ public class Disparo : MonoBehaviour
         // Make the enemy face the player
         Vector3 directionToPlayer = playerT.position - transform.position;
         directionToPlayer.y = 0; // Ignore vertical rotation
-        transform.rotation = Quaternion.LookRotation(directionToPlayer);
+        if(shootPoint) shootPoint.rotation = Quaternion.LookRotation(directionToPlayer);
 
         // Check if it's time to shoot
         if (timeSinceLastShot >= shootInterval)

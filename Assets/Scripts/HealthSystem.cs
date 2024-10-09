@@ -23,7 +23,7 @@ public class HealthSystem : MonoBehaviour
             onDeath?.Invoke(); // Trigger onDeath event
 
             // Check if the object has the "Enemy" tag, and destroy it after the set delay
-            if (CompareTag("Enemy"))
+            if (CompareTag("Boid"))
             {
                 Destroy(gameObject, timeToSelfDestructOnDeath); // Destroy after delay
             }

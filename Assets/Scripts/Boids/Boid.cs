@@ -25,6 +25,8 @@ public class Boid : MonoBehaviour {
     [HideInInspector]
     public int numPerceivedFlockmates;
 
+    [SerializeField] float reduceSpeedDelay = 15;
+
     // Cached
     Material material;
     Transform cachedTransform;
@@ -127,12 +129,12 @@ public class Boid : MonoBehaviour {
         stopped = true;
         velocityLast = velocity;
         velocity = Vector3.zero; // Establece la velocidad a cero
-        StartCoroutine(RestoreSpeedAfterDelay(3f)); // Restaura la velocidad después de 3 segundos (por ejemplo)
+        StartCoroutine(RestoreSpeedAfterDelay(reduceSpeedDelay)); // Restaura la velocidad después de 3 segundos (por ejemplo)
     }
 
     IEnumerator RestoreSpeedAfterDelay(float delay)
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(delay);
         
 
         RestoreSpeed(); // Restaura la velocidad

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25140dce9ff0a39438200025d56f36cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  searchedTag: Enemy
+  searchedTag: Boid
   dealDmg: 10
   destroyOnHit: 0
   onHit:

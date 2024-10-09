@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5710092221255845540}
   - component: {fileID: 107580677173146945}
-  - component: {fileID: 8203014767823774550}
   - component: {fileID: 1471795514820604854}
   m_Layer: 4
   m_Name: spear
@@ -47,26 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25140dce9ff0a39438200025d56f36cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  searchedTag: Enemy
+  searchedTag: Boid
   dealDmg: 10
-  destroyOnHit: 1
+  destroyOnHit: 0
   onHit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8203014767823774550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2602345088991790754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51ed2714b50052d418cd2ac4275c0e58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 50
-  duration: 2
 --- !u!54 &1471795514820604854
 Rigidbody:
   m_ObjectHideFlags: 0

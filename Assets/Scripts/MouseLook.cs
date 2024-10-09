@@ -46,6 +46,7 @@ public class MouseLook : MonoBehaviour
         // Rotate player body left and right
         this.transform.Rotate(Vector3.up * mouseX);
 
+
         // Apply the vertical rotation to the camera
         transform.localRotation = Quaternion.Euler(xRotation, transform.localRotation.eulerAngles.y, 0);
     }
