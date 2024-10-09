@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 107580677173146945}
   - component: {fileID: 4481728751660078208}
   - component: {fileID: 4922247636738807451}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: charged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,6 +102,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5710092221255845540}
     m_Modifications:
+    - target: {fileID: -8700617353114198275, guid: ca3901f13cb6b074dadd4ee50c944e89,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca3901f13cb6b074dadd4ee50c944e89,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -167,10 +172,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: ca3901f13cb6b074dadd4ee50c944e89,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 65702495048144492, guid: ca3901f13cb6b074dadd4ee50c944e89,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ca3901f13cb6b074dadd4ee50c944e89,
         type: 3}
       propertyPath: m_Name
       value: placeholderspear
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca3901f13cb6b074dadd4ee50c944e89,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
