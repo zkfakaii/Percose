@@ -18,6 +18,10 @@ public class HealthSystem : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+
+        // Debugging to show when damage is taken
+        Debug.Log($"{gameObject.name} ha recibido {damage} de daño. Vida actual: {currentHealth}");
+
         if (currentHealth <= 0f)
         {
             onDeath?.Invoke(); // Trigger onDeath event

@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
     //mouse input
     float rotationX;
-    float rotationY;
+   
 
     [Header("Player Movement")]
     public float speed = 1;
@@ -110,13 +110,9 @@ public class PlayerController : MonoBehaviour
     {
         //get the mouse input
         rotationX += Input.GetAxis("Mouse X") *sensitivity;
-        rotationY += Input.GetAxis("Mouse Y")*sensitivity;
+       
 
         //clamp the values of x and y
-        rotationY = Mathf.Clamp(rotationY, rotationMin, rotationMax);
-        
-        //setting the rotation value every update
-        t.localRotation = Quaternion.Euler(-rotationY, rotationX, 0);
     }
 
     void Move()

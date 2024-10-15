@@ -10,7 +10,11 @@ public class ChargedShot : MonoBehaviour
     public void SetSpeed(float projectileSpeed)
     {
         speed = projectileSpeed;
-        // Si tienes un Rigidbody, puedes configurar la velocidad aquí si lo deseas
+        
+        // Agrega un Debug.Log para mostrar un mensaje cuando se dispara un ChargedShot
+        Debug.Log("ChargedShot disparado con velocidad: " + speed);
+        
+        // Si tienes un Rigidbody, puedes configurar la velocidad aquí
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -28,14 +32,12 @@ public class ChargedShot : MonoBehaviour
             if (boid != null)
             {
                 // Llama al método que reduce la velocidad del boid
-                
                 boid.ReduceSpeed();
                 // Aquí puedes agregar cualquier otra lógica, como aplicar daño
                 // boid.ApplyDamage(damage); // Si implementas un método de daño en Boid
             }
 
             // Destruir el disparo después de la colisión (opcional)
-           
         }
     }
 }

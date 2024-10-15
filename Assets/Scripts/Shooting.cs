@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    [SerializeField] GameObject projectilePrefab; // The projectile to instantiate
+    [SerializeField] GameObject normalProjectilePrefab; // Prefab for the normal projectile
+    [SerializeField] GameObject chargedProjectilePrefab; // Prefab for the charged projectile
     [SerializeField] Transform firePoint; // The point from where the projectile is shot
-    [SerializeField] float normalProjectileSpeed = 20f; // Normal speed of the projectile
+    [SerializeField] float normalProjectileSpeed = 20f; // Speed of the normal projectile
     [SerializeField] float chargedProjectileSpeed = 20f; // Speed of the charged projectile
     [SerializeField] float fireRate = 0.5f; // Time between shots
     private float nextFireTime = 0f;
-    [SerializeField] float bulletLife = 1;
+    [SerializeField] float bulletLife = 1f;
 
     [SerializeField] float chargeTimeThreshold = 2f; // Time needed to hold the button for a charged shot
     private float chargeTime = 0f;
@@ -45,32 +46,35 @@ public class Shooting : MonoBehaviour
 
     void Shoot(bool isCharged)
     {
-        // Create a new projectile at the fire point's position and rotation
-        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
-
-        // Get the ChargedShot component (if you have it attached)
-        ChargedShot chargedShot = projectile.GetComponent<ChargedShot>();
-
-        // Set the projectile's speed
+        GameObject projectilePrefab = isCharged ? chargedProjectilePrefab : normalProjectilePrefab;
         float speed = isCharged ? chargedProjectileSpeed : normalProjectileSpeed;
 
-        if (chargedShot != null)
+        // Debugging for charged shots
+        if (isCharged)
         {
-            chargedShot.SetSpeed(speed); // Set the speed on ChargedShot if it exists
-        }
-
-        // Get all Rigidbody components in the projectile and set velocity for the first one found
-        Rigidbody[] rigidbodies = projectile.GetComponentsInChildren<Rigidbody>();
-
-        if (rigidbodies.Length > 0)
-        {
-            rigidbodies[0].velocity = firePoint.forward * speed;
+            Debug.Log("Disparando un ChargedShot.");
         }
         else
         {
-            Debug.LogWarning("No Rigidbody found in the projectile or its children.");
+            Debug.Log("Disparando un disparo normal.");
         }
 
+        // Create a new projectile at the fire point's position and rotation
+        GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+
+        // Get the Rigidbody from the main projectile object and set its velocity
+        Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();
+
+        if (projectileRb != null)
+        {
+            projectileRb.velocity = firePoint.forward * speed;
+        }
+        else
+        {
+            Debug.LogWarning("No Rigidbody found on the projectile.");
+        }
+
+        // Destroy the projectile after the specified lifetime
         Destroy(projectile, bulletLife);
     }
 }
