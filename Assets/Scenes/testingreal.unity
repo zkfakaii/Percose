@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1721,7 +1721,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 408858946}
   sentences:
-  - ' >YOAN WEKITO????'
+  - '                                            HEAD GUARD                         
+    Next!                                       GUARD                          (taking
+    the witch''s broom) Give me that!                           Your flying days
+    are over. (breaks the                           broom in half)                                       
+    HEAD GUARD                          That''s 20 pieces of silver for the witch.                          
+    Next!                                        GUARD                          Get
+    up! Come on!                                       HEAD GUARD                         
+    Twenty pieces.                                       LITTLE BEAR                         
+    (crying) This cage is too small.                                       DONKEY                         
+    Please, don''t turn me in. I''ll never                           be stubborn
+    again. I can change. Please!                           Give me another chance!                                       
+    OLD WOMAN                          Oh, shut up. (jerks his rope)                                      
+    DONKEY                          Oh!                                       HEAD
+    GUARD                          Next! What have you got?                                      
+    GIPETTO                          This little wooden puppet.                                      
+    PINOCCHIO                          I''m not a puppet. I''m a real boy. (his                          
+    nose grows)                                        HEAD GUARD                         
+    Five shillings for the possessed toy.                           Take it away.                                       
+    PINOCCHIO                          Father, please! Don''t let them do this!                          
+    Help me!'
   - 1
   - 1
   - 1
@@ -1747,10 +1766,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: pico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeee
+  m_text: "      \r\n                                     HEAD GUARD\r\n                        
+    Next!\r\n\r\n                                     GUARD\r\n                        
+    (taking the witch's broom) Give me that! \r\n                         Your flying
+    days are over. (breaks the \r\n                         broom in half)\r\n \r\n                                    
+    HEAD GUARD\r\n                         That's 20 pieces of silver for the witch.
+    \r\n                         Next!\r\n \r\n                                    
+    GUARD\r\n                         Get up! Come on!\r\n\r\n                                    
+    HEAD GUARD\r\n                         Twenty pieces.\r\n\r\n                                    
+    LITTLE BEAR\r\n                         (crying) This cage is too small.\r\n\r\n                                    
+    DONKEY\r\n                         Please, don't turn me in. I'll never \r\n                        
+    be stubborn again. I can change. Please! \r\n                         Give me
+    another chance!\r\n \r\n                                     OLD WOMAN\r\n                        
+    Oh, shut up. (jerks his rope)\r\n\r\n                                     DONKEY\r\n                        
+    Oh!\r\n\r\n                                     HEAD GUARD\r\n                        
+    Next! What have you got?\r\n\r\n                                     GIPETTO\r\n                        
+    This little wooden puppet.\r\n\r\n                                     PINOCCHIO\r\n                        
+    I'm not a puppet. I'm a real boy. (his \r\n                         nose grows)\r\n
+    \r\n                                     HEAD GUARD\r\n                        
+    Five shillings for the possessed toy. \r\n                         Take it away.\r\n
+    \r\n                                     PINOCCHIO\r\n                        
+    Father, please! Don't let them do this! \r\n                         Help me!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 940ddb5cf6f3f374bb8fb6143e264257, type: 2}
   m_sharedMaterial: {fileID: -4924030409892117087, guid: 940ddb5cf6f3f374bb8fb6143e264257,
@@ -2474,10 +2510,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: pico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeee
+  m_text: "\r\n                                     SHREK\r\n                        
+    Once upon a time there was a lovely \r\n                         princess. But
+    she had an enchantment \r\n                         upon her of a fearful sort
+    which could \r\n                         only be broken by love's first kiss.
+    \r\n                         She was locked away in a castle guarded \r\n                        
+    by a terrible fire-breathing dragon. \r\n                         Many brave
+    knights had attempted to \r\n                         free her from this dreadful
+    prison, \r\n                         but non prevailed. She waited in the \r\n                        
+    dragon's keep in the highest room of \r\n                         the tallest
+    tower for her true love \r\n                         and true love's first kiss.
+    (laughs) \r\n                         Like that's ever gonna happen. What \r\n                        
+    a load of - (toilet flush)\r\n \r\n               Allstar - by Smashmouth begins
+    to play. Shrek goes about his \r\n               day. While in a nearby town,
+    the villagers get together to go \r\n               after the ogre.\r\n \r\n              
+    NIGHT - NEAR SHREK'S HOME\r\n\r\n                                     MAN1\r\n                        
+    Think it's in there?\r\n\r\n                                     MAN2\r\n                        
+    All right. Let's get it!\r\n\r\n                                     MAN1\r\n                        
+    Whoa. Hold on. Do you know what that \r\n                         thing can do
+    to you?\r\n \r\n                                     MAN3\r\n                        
+    Yeah, it'll grind your bones for it's \r\n                         bread.\r\n
+    \r\n               Shrek sneaks up behind them and laughs."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 940ddb5cf6f3f374bb8fb6143e264257, type: 2}
   m_sharedMaterial: {fileID: -4924030409892117087, guid: 940ddb5cf6f3f374bb8fb6143e264257,
@@ -2569,7 +2622,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 761651670}
   sentences:
-  - 1
+  - '                                            HEAD GUARD                         
+    Next!                                       GUARD                          (taking
+    the witch''s broom) Give me that!                           Your flying days
+    are over. (breaks the                           broom in half)                                       
+    HEAD GUARD                          That''s 20 pieces of silver for the witch.                          
+    Next!                                        GUARD                          Get
+    up! Come on!                                       HEAD GUARD                         
+    Twenty pieces.                                       LITTLE BEAR                         
+    (crying) This cage is too small.                                       DONKEY                         
+    Please, don''t turn me in. I''ll never                           be stubborn
+    again. I can change. Please!                           Give me another chance!                                       
+    OLD WOMAN                          Oh, shut up. (jerks his rope)                                      
+    DONKEY                          Oh!                                       HEAD
+    GUARD                          Next! What have you got?                                      
+    GIPETTO                          This little wooden puppet.                                      
+    PINOCCHIO                          I''m not a puppet. I''m a real boy. (his                          
+    nose grows)                                        HEAD GUARD                         
+    Five shillings for the possessed toy.                           Take it away.                                       
+    PINOCCHIO                          Father, please! Don''t let them do this!                          
+    Help me!'
   - 1
   - 1
   - 1
@@ -4756,10 +4828,32 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: pico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal q leeeepico pal
-    q leeeepico pal q leeeepico pal q leeee
+  m_text: "           Yes, well, actually, that would be a \r\n                        
+    giant. Now, ogres, oh they're much worse. \r\n                         They'll
+    make a suit from your freshly \r\n                         peeled skin.\r\n \r\n                                    
+    MEN\r\n                         No!\r\n\r\n                                    
+    SHREK\r\n                         They'll shave your liver. Squeeze the \r\n                        
+    jelly from your eyes! Actually, it's \r\n                         quite good
+    on toast.\r\n \r\n                                     MAN1\r\n                        
+    Back! Back, beast! Back! I warn ya! \r\n                         (waves the torch
+    at Shrek.)\r\n \r\n               Shrek calmly licks his fingers and extinguishes
+    the torch. The \r\n               men shrink back away from him. Shrek roars
+    very loudly and long \r\n               and his breath extinguishes all the remaining
+    torches until the \r\n               men are in the dark.\r\n \r\n                                    
+    SHREK\r\n                         This is the part where you run away. \r\n                        
+    (The men scramble to get away. He laughs.) \r\n                         And stay
+    out! (looks down and picks \r\n                         up a piece of paper.
+    Reads.) \"Wanted. \r\n                         Fairy tale creatures.\"(He sighs
+    and \r\n                         throws the paper over his shoulder.)\r\n \r\n                        
+    \r\n               THE NEXT DAY\r\n\r\n               There is a line of fairy
+    tale creatures. The head of the guard \r\n               sits at a table paying
+    people for bringing the fairy tale creatures \r\n               to him. There
+    are cages all around. Some of the people in line \r\n               are Peter
+    Pan, who is carrying Tinkerbell in a cage, Gipetto \r\n               who's carrying
+    Pinocchio, and a farmer who is carrying the three \r\n               little pigs.\r\n
+    \r\n                                     GUARD\r\n                         All
+    right. This one's full. Take it \r\n                         away! Move it along.
+    Come on! Get up!\r\n "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 940ddb5cf6f3f374bb8fb6143e264257, type: 2}
   m_sharedMaterial: {fileID: -4924030409892117087, guid: 940ddb5cf6f3f374bb8fb6143e264257,
