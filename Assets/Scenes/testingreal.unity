@@ -151,11 +151,11 @@ Transform:
   m_GameObject: {fileID: 17777348}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.300003, y: 2.21, z: 2.2995}
+  m_LocalPosition: {x: -0.22999573, y: 0, z: 1.7795}
   m_LocalScale: {x: 1, y: 3.8439, z: 3.5716}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1859396429}
+  m_Father: {fileID: 1811288090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &17777351
 BoxCollider:
@@ -1511,7 +1511,7 @@ GameObject:
   - component: {fileID: 147099935}
   - component: {fileID: 147099937}
   m_Layer: 10
-  m_Name: Panel
+  m_Name: P.D. 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1592,7 +1592,6 @@ MonoBehaviour:
   dialogBoxes:
   - {fileID: 761651672}
   - {fileID: 1700608089}
-  - {fileID: 408858945}
 --- !u!1 &163259586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,7 +2573,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.55, y: 0.29}
+  m_AnchoredPosition: {x: -0.19, y: 0.29}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358933866
@@ -2857,9 +2856,6 @@ MonoBehaviour:
     Five shillings for the possessed toy.                           Take it away.                                       
     PINOCCHIO                          Father, please! Don''t let them do this!                          
     Help me!'
-  - 1
-  - 1
-  - 1
   typingSpeed: 0.05
   fastTypingSpeed: 0.02
 --- !u!114 &408858946
@@ -4590,7 +4586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000019073, y: 124.9}
+  m_AnchoredPosition: {x: -176, y: 147}
   m_SizeDelta: {x: 383.5149, y: 249.8135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761651670
@@ -4613,27 +4609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\r\n                                     SHREK\r\n                        
-    Once upon a time there was a lovely \r\n                         princess. But
-    she had an enchantment \r\n                         upon her of a fearful sort
-    which could \r\n                         only be broken by love's first kiss.
-    \r\n                         She was locked away in a castle guarded \r\n                        
-    by a terrible fire-breathing dragon. \r\n                         Many brave
-    knights had attempted to \r\n                         free her from this dreadful
-    prison, \r\n                         but non prevailed. She waited in the \r\n                        
-    dragon's keep in the highest room of \r\n                         the tallest
-    tower for her true love \r\n                         and true love's first kiss.
-    (laughs) \r\n                         Like that's ever gonna happen. What \r\n                        
-    a load of - (toilet flush)\r\n \r\n               Allstar - by Smashmouth begins
-    to play. Shrek goes about his \r\n               day. While in a nearby town,
-    the villagers get together to go \r\n               after the ogre.\r\n \r\n              
-    NIGHT - NEAR SHREK'S HOME\r\n\r\n                                     MAN1\r\n                        
-    Think it's in there?\r\n\r\n                                     MAN2\r\n                        
-    All right. Let's get it!\r\n\r\n                                     MAN1\r\n                        
-    Whoa. Hold on. Do you know what that \r\n                         thing can do
-    to you?\r\n \r\n                                     MAN3\r\n                        
-    Yeah, it'll grind your bones for it's \r\n                         bread.\r\n
-    \r\n               Shrek sneaks up behind them and laughs."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 940ddb5cf6f3f374bb8fb6143e264257, type: 2}
   m_sharedMaterial: {fileID: -4924030409892117087, guid: 940ddb5cf6f3f374bb8fb6143e264257,
@@ -4725,29 +4701,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 761651670}
   sentences:
-  - '                                            HEAD GUARD                         
-    Next!                                       GUARD                          (taking
-    the witch''s broom) Give me that!                           Your flying days
-    are over. (breaks the                           broom in half)                                       
-    HEAD GUARD                          That''s 20 pieces of silver for the witch.                          
-    Next!                                        GUARD                          Get
-    up! Come on!                                       HEAD GUARD                         
-    Twenty pieces.                                       LITTLE BEAR                         
-    (crying) This cage is too small.                                       DONKEY                         
-    Please, don''t turn me in. I''ll never                           be stubborn
-    again. I can change. Please!                           Give me another chance!                                       
-    OLD WOMAN                          Oh, shut up. (jerks his rope)                                      
-    DONKEY                          Oh!                                       HEAD
-    GUARD                          Next! What have you got?                                      
-    GIPETTO                          This little wooden puppet.                                      
-    PINOCCHIO                          I''m not a puppet. I''m a real boy. (his                          
-    nose grows)                                        HEAD GUARD                         
-    Five shillings for the possessed toy.                           Take it away.                                       
-    PINOCCHIO                          Father, please! Don''t let them do this!                          
-    Help me!'
-  - 1
-  - 1
-  - 1
+  - Accediendo a Registro...
+  - '      Acceso detectado'
+  - "  Registro n\xB021874: "
   typingSpeed: 0.05
   fastTypingSpeed: 0.02
 --- !u!4 &774403699 stripped
@@ -7016,11 +6972,11 @@ Transform:
   m_GameObject: {fileID: 1127593871}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.300003, y: 2.21, z: -1.3605}
+  m_LocalPosition: {x: -0.22999573, y: 0, z: -1.8805}
   m_LocalScale: {x: 1, y: 3.8439, z: 3.5716}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1859396429}
+  m_Father: {fileID: 1811288090}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1127593874
 BoxCollider:
@@ -7651,8 +7607,8 @@ Transform:
   m_GameObject: {fileID: 1172335647}
   serializedVersion: 2
   m_LocalRotation: {x: 0.50000006, y: -0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: -3.221199, y: 9.030001, z: 12.15}
-  m_LocalScale: {x: 1, y: 1.6622173, z: 1.6994628}
+  m_LocalPosition: {x: -1.3914, y: 9.030001, z: 12.15}
+  m_LocalScale: {x: 1, y: 1.4389815, z: 1.5674145}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1782449631}
@@ -8518,15 +8474,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 24.124
       objectReference: {fileID: 0}
+    - target: {fileID: -6963420133143263197, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.852
+      objectReference: {fileID: 0}
+    - target: {fileID: -6963420133143263197, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.999
+      objectReference: {fileID: 0}
+    - target: {fileID: -6963420133143263197, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.334
+      objectReference: {fileID: 0}
     - target: {fileID: -6093592463355912122, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 83a655d6ee5d9ee4d991716f424c00ab, type: 2}
+    - target: {fileID: -3542852092398272455, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.154
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.586
+      objectReference: {fileID: 0}
+    - target: {fileID: -3542852092398272455, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.128
+      objectReference: {fileID: 0}
+    - target: {fileID: -3274006528333456403, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -3274006528333456403, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -3274006528333456403, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -2577548232221058511, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: -2577548232221058511, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 140.65324
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -2577548232221058511, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
         type: 3}
@@ -8543,6 +8554,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.815
       objectReference: {fileID: 0}
+    - target: {fileID: -2093772787462966335, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.461
+      objectReference: {fileID: 0}
+    - target: {fileID: -2093772787462966335, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.017
+      objectReference: {fileID: 0}
+    - target: {fileID: -2093772787462966335, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.056
+      objectReference: {fileID: 0}
     - target: {fileID: -1806680513116206669, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8553,6 +8579,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 83a655d6ee5d9ee4d991716f424c00ab, type: 2}
+    - target: {fileID: -1255605710908113952, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.395
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.994
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.148
+      objectReference: {fileID: 0}
     - target: {fileID: -1120989108687609925, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8578,6 +8619,51 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d863c4172ca0d304eaf3591c09677a08, type: 2}
+    - target: {fileID: 4083501151425157549, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306643203051859313, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306643203051859313, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.742
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306643203051859313, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.682
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865064391339405807, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.428
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865064391339405807, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.224
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865064391339405807, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.071
+      objectReference: {fileID: 0}
     - target: {fileID: 6745302439343835087, guid: d7cb3c6e1a6c6834ab9bbe1d49f3eb3a,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10033,8 +10119,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000019073, y: -44}
-  m_SizeDelta: {x: 383.5149, y: 249.8135}
+  m_AnchoredPosition: {x: 1.5881, y: -3.7}
+  m_SizeDelta: {x: 516.3832, y: 249.8135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700608089
 MonoBehaviour:
@@ -10050,10 +10136,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 1700608090}
   sentences:
-  - 1
-  - jfdgg
-  - 1
-  - 1
+  - "A\xF1o 256, Mes 18, dia 30"
+  - ">Hoy llegamos a nuestro turno normal en la Base Alfa en la superficie, las alarmas
+    sonaron como nunca, habia una alerta m\xE1xima en los sistemas del Tesseus"
+  - '>Ha sido Hackeada'
+  - ">Parece que las c\xE1maras de criogenizaci\xF3n siguen seguras, un gran alivio..."
+  - ">La fuente del ataque se nos es deconocida hasta el momento, puede que sea un
+    agente de alguna compa\xF1ia enemiga que nos quiere perjudicar, aun as\xED esto
+    es demasiado extremo."
+  - ">En cuesti\xF3n de minutos todos los sistemas fueron hackeados, quien se que
+    haya sido, debe de ser de los mayores talentos en todo el sistema, hemos estado
+    barajando nuestras opciones, d\xEDficilmente desde nuestra posici\xF3n podremos
+    hacer algo, la desventaja del Tesseus es su pesima accesibilidad para humanos
+    desde fuera, contamos con los servidores de mantenimiento para todo, pero tambi\xE9n
+    parecen haber sido hackeados."
+  - ">Lo m\xE1s r\xE1pido que podemos intentar es activar a nuestro experimento fallido,
+    el Servidor-Modelo_Hacktus."
+  - ' (  Presiona E para cerrar  )'
   typingSpeed: 0.05
   fastTypingSpeed: 0.02
 --- !u!114 &1700608090
@@ -10129,8 +10228,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11264,10 +11363,12 @@ Transform:
   m_GameObject: {fileID: 1811288088}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.4, y: 10.41, z: 0.5095}
+  m_LocalPosition: {x: 41.53, y: 10.41, z: 0.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1127593872}
+  - {fileID: 17777349}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1811288091
@@ -11285,7 +11386,7 @@ MonoBehaviour:
   player: {fileID: 391474649}
   animator: {fileID: 1811288092}
   animationTrigger: Activate
-  detectionRange: 4
+  detectionRange: 10
 --- !u!95 &1811288092
 Animator:
   serializedVersion: 5
@@ -11392,8 +11493,6 @@ Transform:
   - {fileID: 352304370}
   - {fileID: 1013090762}
   - {fileID: 1447523167}
-  - {fileID: 1127593872}
-  - {fileID: 17777349}
   - {fileID: 1026216655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12348,6 +12447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785494087605069534, guid: c9c683b9e6d78b247b34fbefe1692198,
+        type: 3}
+      propertyPath: m_Name
+      value: Placa de datos 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2819652154438527197, guid: c9c683b9e6d78b247b34fbefe1692198, type: 3}
