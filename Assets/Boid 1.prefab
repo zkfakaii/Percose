@@ -174,11 +174,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
-  damageInterval: 20
-  damageAmount: 10
-  initialGracePeriod: 120
-  sceneToLoadOnDeath: GameOver
+  timeToSelfDestructOnDeath: 1
+  onBeenHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  shouldDropItem: 1
+  itemToDrop: {fileID: 0}
+  dropQuantity: 1
+  dropChance: 0.5
 --- !u!54 &8901267119747488577
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -548,7 +554,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 83a655d6ee5d9ee4d991716f424c00ab, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: a668ebc19e1419f45b26b57f2b6dc19f, type: 3}
+    - {fileID: -8700617353114198275, guid: a668ebc19e1419f45b26b57f2b6dc19f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a668ebc19e1419f45b26b57f2b6dc19f, type: 3}
