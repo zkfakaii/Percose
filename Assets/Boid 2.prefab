@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8757544341973141986}
   - component: {fileID: 7607201815478206535}
   m_Layer: 11
-  m_Name: Boid Tarjeta R-3
+  m_Name: Boid 2
   m_TagString: Boid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,10 +181,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   shouldDropItem: 1
-  itemToDrop: {fileID: 3459453917572562490, guid: 1770a7eae9ec24742beb9b935a6ced65,
+  itemToDrop: {fileID: 6714180987621940031, guid: 37e38fbe6b224f7478a17e7ae2d47964,
     type: 3}
-  dropQuantity: 1
-  dropChance: 1
+  dropQuantity: 2
+  dropChance: 0.5
 --- !u!136 &7607201815478206535
 CapsuleCollider:
   m_ObjectHideFlags: 0
